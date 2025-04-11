@@ -1,0 +1,12 @@
+john filename --format=Raw-MD5
+zip2john filename > filename
+john filename
+sha256sum filename
+openssl enc -aes-256-cbc -salt -in filename -out filename
+openssl enc -aes-256-cbc -d -in filename -out filename
+steghide embed -cf imagename -ef filename
+steghide --info imagename
+steghide --extract -sf imagename
+nmap websitename
+nmap -A websitename
+nmap -r websitename
